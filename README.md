@@ -5,9 +5,12 @@ Getting started
 Add css and required js files into the project.
 
 Add a bit of markup: 
+```
 <textarea class='mention'>
+```
 
-Initialise the mentionsInput: 
+Initialise the mentionsInput:
+```
 $('textarea.mention').mentionsInput({
   onDataRequest:function (mode, query, callback) {
     var data = [
@@ -24,3 +27,4 @@ $('textarea.mention').mentionsInput({
     callback.call(this, data);
   }
 });
+```
